@@ -1,0 +1,65 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+body {
+	font-family: 'Oxygen', sans-serif;
+	background-color: #660066;
+	color: lightgrey;
+}
+/* Navigation Bar */
+#header-nav {
+	background-color: #7aeb7a;
+	border: 0px;
+	border-radius: 0px;
+}
+#logo {
+	background: url("../img/logo.jpg") no-repeat;
+	height: 100px;
+	width: 100px;
+	margin: 10px 15px 10px 0px;
+	background-size: 100px 100px;
+	border: transparent;
+	border-radius: 15px;
+}
+.navbar-brand {
+	height: 100%;
+}
+.navbar-brand h1 {
+	font-family: 'Lora', serif;
+	font-size: 2.5em;
+	color: #595959;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+	text-shadow: 2px 2px 5px grey;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+	text-decoration: none;
+}
+.navbar p {
+	color: black;
+}
+#nav-list a {
+	color: #660066;
+	text-align: center;
+	font-size: 1.2em;
+}
+#nav-list a:hover {
+	color: #E7E7E7;
+}
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+	border: 1px solid #660066;
+}
+/* Navgation Bar End */
+/* Main Content */
+#menu-description {
+	border: 2px solid lightgrey;
+	padding: 0px 10px 10px 10px;
+	margin: 10px;
+}
+/* Main Content End */
+@media (max-width: 767px) {
+	#collapsible-nav {
+		background-color: orange;
+	}
+}
