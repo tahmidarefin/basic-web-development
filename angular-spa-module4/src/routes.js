@@ -21,7 +21,7 @@
 			}
 		})
 		.state('menuList', {
-			url: '/{menus}',
+			url: 'categories/{menus}',
 			templateUrl: 'src/templates/menus.template.html',
 			controller: 'menusController as mainList',
 			resolve: {
