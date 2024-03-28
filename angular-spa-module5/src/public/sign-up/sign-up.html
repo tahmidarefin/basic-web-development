@@ -1,0 +1,20 @@
+<div id="reg">
+	<h2>Registration Form</h2>
+	<form name='regForm' novalidate>
+		<p><label for="firstName">First Name</label> </br>
+		<input type="text" name="firstName" id="firstName" ng-model="signupCtrl.firstName" required> </br>
+		<span ng-if="regForm.firstName.$error.required && regForm.firstName.$touched">First Name is invalid</span></p>
+		<p><label for="lastName">Last Name</label> </br>
+		<input type="text" name="lastName" id="lastName" ng-model="signupCtrl.lastName"> </br>
+		<p><label for="Email">Email Address</label> </br>
+		<input type="email" name="email" id="email" ng-model="signupCtrl.email" required> </br>
+		<span ng-if="regForm.email.$invalid && regForm.email.$touched">Email is invalid</span></p>
+		<p><label for="Cell">Phone Number</label> </br>
+		<input type="text" name="cell" id="cell" ng-model="signupCtrl.cell"> </br></p>
+		<p><label for="Cell">Favourite Dish</label> </br>
+		<input type="text" name="favdish" id="favdish" placeholder="Short Name" ng-model="signupCtrl.favdish" required> </br>
+		<span ng-if="regForm.favdish.$error.required && regForm.favdish.$touched">Favourite Dish Name is invalid</span></p>
+		</p><button ng-disabled="regForm.$invalid" ng-click="signupCtrl.submit()">Submit</button> </br>
+		<span ng-if="signupCtrl.regSuccess">Your information saved successfully.</span></p>
+	</form>
+</div>

@@ -1,0 +1,20 @@
+<div id="myinfo">
+	<div ng-if="myinfoCtrl.user">
+		<h3> Personal Details </h3> 
+		Name: {{ myinfoCtrl.user.firstName }} {{ myinfoCtrl.user.lastName }} </br>
+		Email: {{ myinfoCtrl.user.email }} </br>
+		Mobile: {{ myinfoCtrl.user.cell }} </br>
+		<h3> Favorite Dish </h3>
+		<div ng-if="myinfoCtrl.user.dish" class="container"> 
+			<menu-item menu-item="myinfoCtrl.user.favdish" 
+			category-short-name="myinfoCtrl.user.favdish.short_name[0]">
+  			</menu-item>
+		</div>
+		<span ng-hide="myinfoCtrl.user.dish">
+			No such menu number exists.
+		</span>
+	</div>
+	<div ng-hide="myinfoCtrl.user">
+		Not Signed Up Yet. <a ui-sref="public.signup"> Sign up </a> Now!
+	</div>
+</div>
