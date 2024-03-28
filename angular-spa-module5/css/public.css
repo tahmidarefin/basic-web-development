@@ -122,6 +122,10 @@ h3.menu-item-title {
 #reg button {
   background-color: black;
 }
+
+#reg input {
+    color: black;
+}
 /* END REGISTRATION PAGE */
 
 /* INFO PAGE */
@@ -129,6 +133,7 @@ h3.menu-item-title {
     color: #fff;
     margin-left: 30%;
 }
+
 
 /* END INFO PAGE */
 
