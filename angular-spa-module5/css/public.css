@@ -124,7 +124,7 @@ h3.menu-item-title {
 }
 
 #reg input {
-    color: black;
+    color: black !important;
 }
 /* END REGISTRATION PAGE */
 
