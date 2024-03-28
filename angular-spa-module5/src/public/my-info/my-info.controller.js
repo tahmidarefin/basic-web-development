@@ -7,7 +7,6 @@ myinfoController.$inject = ['myinfoService']
 function myinfoController(myinfoService) {
 	var ctrl = this;
 	ctrl.user = myinfoService.user;
-	console.log(ctrl.user);
 }
 
 })();

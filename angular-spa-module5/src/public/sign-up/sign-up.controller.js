@@ -7,13 +7,16 @@ signupController.$inject = ['myinfoService'];
 function signupController(myinfoService) {
 	var ctrl = this;
 	ctrl.regSuccess = false;
+	ctrl.cat = "";
 	ctrl.submit = function () {
-		var promise = myinfoService.menudata(ctrl.favdish);
+		ctrl.cat = ctrl.favdish.replace(/[^a-zA-Z]/gm,"");
+		var promise = myinfoService.menudata(ctrl.cat);
 		var user = {
 			firstName: ctrl.firstName,
 			lastName: ctrl.lastName,
 			email: ctrl.email,
 			cell: ctrl.cell,
+			cat: ctrl.cat,
 			favdish: null,
 			dish: true
 		};
